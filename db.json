@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "email": "silvialuiza@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "email": "jean@gmail.com",
+      "password": "78945612",
+      "id": 2
+    }
+  ],
+  "produtos": [],
+  "companies": [
+    {
+      "razao": "SDB COMERCIO DE ALIMENTOS LTDA",
+      "fantasyName": "FORT ATACADISTA",
+      "cnpj": "09477652006801",
+      "email": "fortatacadista@gmail.com",
+      "cep": "89202250",
+      "adress": "R. Cel. Francisco Gomes",
+      "number": "788",
+      "bairro": "Bucarein",
+      "city": "Joinville",
+      "complement": "",
+      "latitude": "-26.3185941",
+      "longitude": "-48.8443883",
+      "id": 1
+    },
+    {
+      "razao": "A. ANGELONI & CIA. LTDA",
+      "fantasyName": "Supermercados Angeloni",
+      "cnpj": "83646984006736",
+      "email": "angelonisupermercado@gmail.com",
+      "cep": "89204002",
+      "adress": "R. Dr. João Colin",
+      "number": "2500",
+      "bairro": "America",
+      "city": "Joinville",
+      "complement": "",
+      "latitude": "-26.2777492",
+      "longitude": "-48.8514848",
+      "id": 2
+    }
+  ],
+  "fornecedores": [
+    "Del valle",
+    "Amazon",
+    "Dell"
+  ],
+  "categorias": [
+    "Carnes",
+    "Ovos",
+    "Higiene",
+    "Cereais",
+    "Massas"
+  ]
+}

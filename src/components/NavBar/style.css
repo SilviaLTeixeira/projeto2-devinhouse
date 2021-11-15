@@ -1,0 +1,29 @@
+.navbar{
+    background-color:#CD0000;
+    height: 54px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+}
+span{
+    color:#fff;
+}
+.navbar-item{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    color:#FFF;
+}
+.li-bar:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#000;
+}
+@media screen and (max-width:700px){
+    .navbar,.navbar-item{
+      display:flex;
+    }
+}
