@@ -3,6 +3,7 @@ import './style.css'
 import NavBar from '../../components/NavBar';
 import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
+import {URL_SERVER} from '../../utils/constantes.js'
 
 const Empresas = () => {
     const[razao,setRazao]=useState('');
@@ -56,7 +57,8 @@ const Empresas = () => {
                 return
             }
             await fetch(
-                'http://localhost:3333/companies',
+                URL_SERVER + 
+                '/companies',
                 {
                   headers: {
                     'Accept': 'application/json',

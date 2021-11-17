@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import './style.css'
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import {URL_SERVER} from '../../utils/constantes.js'
 
 const Login = () => {
     const[email,setEmail]=useState('');
@@ -11,7 +12,8 @@ const history = useHistory();
 const handleSubmit = async(event) =>{
     try {
         event.preventDefault();
-        const response = await fetch(`http://localhost:3333/users?email=${email}&password=${password}`);
+        console.log(URL_SERVER)
+        const response = await fetch(URL_SERVER + `/users?email=${email}&password=${password}`);
         const data= await response.json();
         console.log(data)
         if (data.length===1){

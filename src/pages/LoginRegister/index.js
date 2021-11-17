@@ -2,6 +2,7 @@ import  { useState } from "react";
 import Swal from "sweetalert2";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
+import {URL_SERVER} from '../../utils/constantes.js'
 
 const Register = () =>{
     const[email,setEmail]=useState('')
@@ -25,7 +26,8 @@ const Register = () =>{
             return
             }
             await fetch(
-                'http://localhost:3333/users',
+              URL_SERVER +
+                '/users',
                 {
                   headers: {
                     'Accept': 'application/json',

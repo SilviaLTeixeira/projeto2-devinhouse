@@ -3,6 +3,7 @@ import './style.css'
 import NavBar from '../../components/NavBar';
 import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
+import {URL_SERVER} from '../../utils/constantes.js'
 
 const Produtos = () => {
     const[url,setUrl]=useState('');
@@ -37,7 +38,8 @@ const Produtos = () => {
                 return
             }
             await fetch(
-                'http://localhost:3333/produtos',
+                 URL_SERVER +
+                '/produtos',
                 {
                   headers: {
                     'Accept': 'application/json',
@@ -73,10 +75,10 @@ const Produtos = () => {
     };
     useEffect(() => {
         try {
-          fetch("http://localhost:3333/fornecedores").then((response) =>
+          fetch(URL_SERVER + "/fornecedores").then((response) =>
             response.json().then((data) => setProviderList(data))
           );
-          fetch("http://localhost:3333/categorias").then((response) =>
+          fetch(URL_SERVER + "/categorias").then((response) =>
             response.json().then((data) => setGroupList(data))
           );
         } catch (error) {
@@ -106,11 +108,13 @@ const Produtos = () => {
         </button>
         </div>
         <div className="input-container">
+        
         {url&&(
           <div className="image-render">
                 <img src={url} alt="Imagem do produto"/>
               </div>
         )}
+  
         <div className="name">
         <h4 className="h4">URL da imagem</h4>
         </div>

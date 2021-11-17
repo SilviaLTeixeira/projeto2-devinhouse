@@ -54,3 +54,7 @@
     width: 80%;
     
 }
+.image-render img{
+    max-width: 320px;
+    object-fit: contain;
+}

@@ -6,8 +6,8 @@
       "id": 1
     },
     {
-      "email": "jean@gmail.com",
-      "password": "78945612",
+      "email": "jean_c_mazzolli123789@hotmail.com",
+      "password": "250795jean",
       "id": 2
     }
   ],
@@ -42,6 +42,21 @@
       "latitude": "-26.2777492",
       "longitude": "-48.8514848",
       "id": 2
+    },
+    {
+      "razao": "GIASSI & CIA LTDA",
+      "fantasyName": "GIASSI SUPERMERCADOS",
+      "cnpj": "83648477002230",
+      "email": "giassisupermercados@gmail.com",
+      "cep": "89202310",
+      "adress": "R. Inácio Bastos",
+      "number": "173",
+      "bairro": "Bucarein",
+      "city": "Joinville",
+      "complement": "",
+      "latitude": "-26.3157624",
+      "longitude": "-48.8455496",
+      "id": 3
     }
   ],
   "fornecedores": [

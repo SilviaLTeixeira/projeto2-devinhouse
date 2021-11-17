@@ -2,13 +2,14 @@ import {useState,useEffect} from 'react';
 import {MapContainer,TileLayer,Marker,Popup} from "react-leaflet";
 import NavBar from '../../components/NavBar';
 import './style.css'
+import {URL_SERVER} from '../../utils/constantes.js'
 function Map() {
 
 const [companies,setCompanies]=useState([])
 useEffect(() => {
 async function handleCompanies() {
   try{
-    const response = await fetch("http://localhost:3333/companies");
+    const response = await fetch(URL_SERVER + "/companies");
     const data = await response.json();
     setCompanies(data)
   }catch(error){
