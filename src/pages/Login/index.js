@@ -12,7 +12,6 @@ const history = useHistory();
 const handleSubmit = async(event) =>{
     try {
         event.preventDefault();
-        console.log(URL_SERVER)
         const response = await fetch(URL_SERVER + `/users?email=${email}&password=${password}`);
         const data= await response.json();
         console.log(data)
