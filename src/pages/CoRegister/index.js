@@ -143,7 +143,7 @@ const Empresas = () => {
             onChange={(event) => setCnpj(event.target.value)}
             className="input"
             placeholder="CNPJ"
-            type="number"
+            type="text"
             />
         <input 
             value={email}
@@ -163,7 +163,7 @@ const Empresas = () => {
             onChange={(event) => setCep(event.target.value)}
             className="input"
             placeholder="CEP"
-            type="number"
+            type="text"
             />
         <input 
             value={adress}

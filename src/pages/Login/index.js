@@ -14,7 +14,6 @@ const handleSubmit = async(event) =>{
         event.preventDefault();
         const response = await fetch(URL_SERVER + `/users?email=${email}&password=${password}`);
         const data= await response.json();
-        console.log(data)
         if (data.length===1){
         history.push("/map")   
         }else{
